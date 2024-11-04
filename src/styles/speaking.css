@@ -1,0 +1,73 @@
+/* Add to existing speaking.css */
+    .audio-recorder {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .record-button {
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      border: none;
+      background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+      color: #1a1a1a;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .record-button.recording {
+      background: linear-gradient(135deg, #ff4444 0%, #ff4444 100%);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .chat-messages {
+      margin-top: 1rem;
+    }
+
+    .chat-message {
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .chat-message.ai {
+      background: rgba(37, 117, 252, 0.1);
+    }
+
+    .chat-message.user {
+      background: rgba(255, 255, 255, 0.1);
+      margin-left: 2rem;
+    }
+
+    .practice-controls {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+
+    .practice-controls .button {
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%);
+    }
